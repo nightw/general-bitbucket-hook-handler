@@ -1,0 +1,16 @@
+{
+    "name": "general-bitbucket-hook-handler",
+    "description": "A small service which handles incoming Bitbucket POST hooks and runs commands if the commits in the POST data belong to the tracked repository",
+    "version": "0.1.0",
+    "release_date" : "2014-12-10",
+    "repository" : {
+        "type" : "git",
+        "url" : "http://github.com/nightw/general-bitbucket-hook-handler.git"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "q" : "1.0.1"
+    }
+}
