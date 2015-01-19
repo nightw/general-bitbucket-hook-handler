@@ -28,7 +28,8 @@ var config = {
     }
   },
   retries: 5,
-  command_timeout: 120,
+  // this is in milliseconds!
+  command_timeout: 120000,
   logfile: "./general-bitbucket-hook-handler.log",
   debug: false,
   port: 38889
