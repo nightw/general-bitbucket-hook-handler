@@ -121,6 +121,8 @@ function do_exec(command, app_name, retry_left) {
       log('UPDATE FAILED (retries left: ' + (retry_left - 1) + ') for ' + app_name + ':');
       log("\t command: '" + command + "'");
       log("\t\t exit code: " + error.code);
+      log("\t\t exit signal: " + error.signal);
+      log("\t\t exit was because of a kill?: " + error.killed);
       // if stdout or stderr don't have a newline at the end (they usually have
       // if they're not empty), then we add one if the log goes to file
       log("\t\t stdout: " + stdout, /\n$/.test(stdout) ? false : true);
